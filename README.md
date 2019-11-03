@@ -17,7 +17,8 @@ Or install it yourself as:
 ## Usage
 
 1. You need to get API key - https://translate.yandex.com/developers/keys
-2. ```ruby
+2. 
+```ruby
 translator = YandexTranlatorIS::YandexTr
 ```
 3. Create API key
