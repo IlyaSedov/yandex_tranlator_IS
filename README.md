@@ -1,9 +1,3 @@
-# YandexTranlatorIS
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/yandex_tranlator_IS`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,17 +16,38 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+1. You need to get API key - https://translate.yandex.com/developers/keys
+2. ```ruby
+translator = YandexTranlatorIS::YandexTr
+```
+3. Create API key
+```ruby
+translator.apikey 'your key'
+```
+4. Install defoult language 
+```ruby
+translator.default_lang 'default language'
+```
+5. Translate
+```ruby
+translator.translate 'your text', lang:'language'
+```
+6. Get current API key
+```ruby
+translator.start
+```
+7. See the list of available languages
+```ruby
+translator.languages
+```
+8. See current default language
+```ruby
+translator.default.languages
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/yandex_tranlator_IS. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/IlyaSedov/yandex_tranlator_IS.
 
 ## License
 
@@ -40,4 +55,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the YandexTranlatorIS project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/yandex_tranlator_IS/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the YandexTranlatorIS project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/IlyaSedov/yandex_tranlator_IS/blob/master/CODE_OF_CONDUCT.md).
